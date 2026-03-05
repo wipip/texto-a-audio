@@ -101,7 +101,7 @@ with st.sidebar:
       
       #text = st.text_input("Enter text")
       in_lang = st.selectbox(
-          "Seleccione el lenguaje de entrada",
+          "Seleccione del texto a escanear",
           ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones"),
       )
       if in_lang == "Ingles":
@@ -118,7 +118,7 @@ with st.sidebar:
           input_language = "ja"
       
       out_lang = st.selectbox(
-          "Select your output language",
+          "Selecciona idioma para transformar en auido",
           ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones"),
       )
       if out_lang == "Ingles":
@@ -135,7 +135,7 @@ with st.sidebar:
           output_language = "ja"
       
       english_accent = st.selectbox(
-          "Seleccione el acento",
+          "Seleccione el acento (opcional)",
           (
               "Default",
               "India",
